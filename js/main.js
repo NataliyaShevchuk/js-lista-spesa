@@ -5,34 +5,29 @@
 // Data una lista della spesa, stampare sulla pagina (anche brutalmente, basta che si vedano) 
 // gli elementi della lista individualmente con un ciclo while.
 
-
+//creo la lista della spesa
 const listaSpesa = [ "pasta", "sugo", "parmiggiano", "tonno"];
+//riprendo il container da html
 const ingredienteEl = document.getElementById("ingrediente");
 
+//dichiaro la mia variabile in forma false 
 let ingrediente = false;
 let i = 0;
 
-
+// for (let i = 0; i < listaSpesa.length; i++ ){
+//     console.log(listaSpesa[i]);
+//     ingredienteEl.innerHTML += (listaSpesa[i]);
+// }
 while ( ingrediente === false && i < listaSpesa.length) { 
-    ingredienteEl.innerHTML = (listaSpesa);
-
-    if (listaSpesa[i] === ingrediente ){
-        ingrediente === true;
-        const risultato = ingrediente;
-        console.log = (risultato);
-    } 
-
+    ingredienteEl.innerHTML += (listaSpesa[i] + " ");
     console.log(listaSpesa[i]);
-    
 
     i++;
 }
+    
 
-if ( ingrediente === true ){
-    ingredienteEl.innerHTML = ( risultato);
-} else{
-    ingredienteEl.innerHTML = ( listaSpesa);
-}
+
+
 
 
 
